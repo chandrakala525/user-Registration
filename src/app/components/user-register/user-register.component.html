@@ -1,0 +1,69 @@
+<form name="userDetailsForm">
+  <table>
+    <tr>
+      <td><label>First Name:</label></td>
+      <td><input 
+        type="text" 
+        name="firstName" 
+        #firstName="ngModel"
+        [(ngModel)]="userDetails.firstName"
+        /></td>
+    </tr>
+    <tr>
+      <td><label>Last Name:</label></td>
+      <td><input 
+        type="text" 
+        name="lastName"
+        #lastName="ngModel"
+        [(ngModel)]="userDetails.lastName"
+        /></td>
+    </tr>
+    <tr>
+      <td><label>User Name:</label></td>
+      <td><input 
+        type="text" 
+        name="userName" 
+        #userName="ngModel"
+        [(ngModel)]="userDetails.userName"
+        /></td>
+    </tr>
+    <tr>
+      <td><label>Password:</label></td>
+      <td><input 
+        type="password" 
+        name="password" 
+        #password="ngModel"
+        [(ngModel)]="userDetails.password"
+        /></td>
+    </tr>
+    <tr>
+      <td><label>Confirm Password:</label></td>
+      <td><input 
+        type="password" 
+        name="confirmPassword" 
+        #confirmPassword="ngModel"
+        [(ngModel)]="userDetails.confirmPassword"
+        /></td>
+    </tr>
+    <tr>
+      <td><label>Email:</label></td>
+      <td><input 
+        type="email" 
+        name="email" 
+        #email="ngModel"
+        [(ngModel)]="userDetails.email"/></td>
+    </tr>
+    <tr>
+      <td><label>Date of Birth:</label></td>
+      <td><input 
+        type="date" 
+        name="dateOfBirth" 
+        #dob="ngModel"
+        [(ngModel)]="userDetails.dateOfBirth"/></td>
+    </tr>
+    <tr>
+      <td><button (click)="userClear()">CLEAR</button></td>
+      <td><button (click)="userRegister()">REGISTER</button></td>
+    </tr>
+  </table>
+</form>
